@@ -61,7 +61,7 @@ jobs:
       - name: Establish Tailscale Connection
         run: |
           # Bring up Tailscale with the provided auth key and set a unique hostname
-          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=${{ secrets.TAILSCALE_AUTH_KEY }} --hostname=gh-runner-mljnet
+          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=${{ secrets.k2qwzbmc7P11CNTRL }} --hostname=gh-runner-mljnet
          
           # Wait for Tailscale to assign an IP
           $tsIP = $null
